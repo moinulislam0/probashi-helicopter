@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript">
+        $(function () {
+            $("#header-content").load("./header.html");
+            $("#footer").load("./footer.html");
+        });
+    </script>
+    <style>
+        .submenu {
+            display: none;
+        }
+
+        :root {
+            --color-primary: #8d328f;
+            --color-primary-light: #d96cdb;
+            --secondary-color: #0a5c83;
+        }
+
+        /* Show the submenu when hovering over the parent element */
+        .group:hover .submenu {
+            display: block;
+        }
+
+        @keyframes carousel {
+            100% {
+                transform: translateX(-250);
+            }
+        }
+
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+        .scroll-text {
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            60% {
+                transform: translateX(30%);
+            }
+        }
+
+        .dropdown_item:hover .dropdown_arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container mx-auto rounded  bg-white h-[76px] sm:mb-[10px]   md:mb-0">
+
+        <div class="flex p-2">
+            <div class="w-3/12">
+                <img class="h-[50px]" src="./logo/1.webp" alt="">
+            </div>
+            <div class="w-6/12 flex justify-center invisible md:visible" style="align-items: center;">
+                <b class="uppercase text-[var(--color-primary)] text-xl font-bold">Fly Helicopter Service Bangladesh</b>
+            </div>
+            <div class="w-3/12 flex justify-end">
+
+
+                <div class="flex mr-2 pr-2" style="border-right: 1px solid;">
+                    <!-- <div class="flex justify-center mb-[65px] md:mb-0" style="align-items: center; ">
+                  <ion-icon class=" lg:text-2xl md:text-sm " name="mail-outline"></ion-icon>
+               </div> -->
+
+                    <div>
+                        <p class="text-md font-semibold mb-[-6px] text-right text-[var(--color-primary)]">EMAIL</p>
+                        <p class="text-right">abcd.com</p>
+                    </div>
+                </div>
+                <div class="flex ">
+                    <!-- <div class="flex justify-center mb-[65px] md:mb-0" style="align-items: center;">
+                  <ion-icon class=" lg:text-2xl md:text-sm " name="call-outline"></ion-icon>
+               </div> -->
+
+                    <div>
+                        <p class="text-md font-semibold mb-[-6px] text-right text-[var(--color-primary)]">MOBILE</p>
+                        <p class="text-right">01721584542</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="container mx-auto rounded sticky top-0 z-40 lg:z-50  bg-[var(--color-primary)] ">
+            <div
+                class="container mx-auto    flex items-center bg-[var(--color-primary)] rounded-md  justify-between text-black xl:text-white">
+                <span class="text-3xl cursor-pointer text-white ml-12 xl:hidden">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+                </span>
+                <ul class=" uppercase xl:flex xl:items-center z-[-1] xl:z-auto xl:static absolute bg-white xl:bg-[var(--color-primary)] w-[450px] border-1 letf-0 xl:w-auto xl:py-0 my-4 xl:pl-0 pl-7 xl:opacity-100 opacity-0 top-[-300px] trasition-all easein doration-500 m-[5px]"
+                    style="margin: 0px;padding: 5px;">
+
+                    <li class="mr-2 md:my-0 relative group ">
+                        <a class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2"
+                            href="Index.html">
+                            <div class="flex gap-1">
+                                <p class="whitespace-nowrap uppercase">Home</p>
+                            </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                        </a>
+                        <!-- <div class="visible sm:invisible w-2/3">
+                     <hr>
+                  </div> -->
+                        <div style="z-index: 99;"
+                            class="lg:absolute bg-white  text-slate-500 text-lg  w-56 drop-shadow-md ml-8 lg:ml-auto">
+                            <ul class="space-y-2 lg:w-56 group-hover:block submenu p-2 ">
+                                <li><a class="text-[15px]" href="" target="_blank">service</a>
+                                    <hr>
+                                </li>
+                                <li><a class="text-[15px]" href="" target="_blank">offer</a>
+                                    <hr>
+                                </li>
+                                <li><a class="text-[15px]" href="" target="_blank">top city</a>
+                                    <hr>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mr-2 md:my-0 font-bold "><a
+                            class="text-md  decoration-500 xl:hover:bg-[var(--color-primary)]  p-2 " href="">Partner</a>
+
+
+                    </li>
+
+
+
+                    <li class="mr-2 md:my-0 relative group ">
+                        <a class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2"
+                            href=" ">
+                            <div class="flex gap-1">
+                                <p class="whitespace-nowrap uppercase">News & media</p>
+                            </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                        </a>
+                        <!-- <div class="visible sm:invisible w-2/3">
+                 <hr>
+              </div> -->
+                        <div style="z-index: 99;"
+                            class="lg:absolute bg-white  text-slate-500 text-lg  w-56 drop-shadow-md ml-8 lg:ml-auto">
+                            <ul class="space-y-2 lg:w-56 group-hover:block submenu p-2 ">
+                                <li><a class="text-[15px]" href="" target="_blank">google review</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mr-2 md:my-0"><a
+                            class="text-md decoration-500 font-bold xl:hover:bg-[var(--color-primary)]  p-2"
+                            href="about.html">About us</a></li>
+
+
+                    <li class="mr-2 md:my-0 relative group"><a
+                            class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2"
+                            href="contact.html">
+                            <div class="flex gap-1">
+                                <p class="whitespace-nowrap ">Contact
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="mr-2 md:my-0 relative group"><a
+                            class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2"
+                            href="">
+                            <div class="flex gap-1">
+                                <button class="p-2 rounded-lg text-center bg-black uppercase text-white">
+                                    <p>Offer</p>
+                                </button>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+                </nav>
+            </div>
+            <marquee class="bg-[#fff] text-[var(--color-primary)] text-sm ">Fly Helicopter Service Bangladesh. Do you
+                want
+                to be a agent of probashi air. Please communicate with us. Mobile: 01637373737, Email: abcd.com
+            </marquee>
+        </section>
+        <section class="container mx-auto mt-4 ">
+
+
+
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96  w-full lg:w-full h-[350px] lg:h-[600px]">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                        <img src="./slider image/1.jpg"
+                            class=" absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="...">
+
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden relative duration-700 ease-in-out h-[100%]" data-carousel-item>
+                        <img src="./slider image/2.jpg"
+                            class="h-[100%]  absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+                            alt="...">
+
+
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                        <img src="./slider image/3.jpg"
+                            class="h-[100%]  absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="...">
+
+
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./slider image/4.jpg"
+                            class="h-[100%] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="...">
+
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./slider image/5.jpg"
+                            class="h-[100%]  absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            alt="...">
+
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <button type="button"
+                        class="w-3 h-3 rounded-full bg-white/50 dark:bg-white/50 hover:bg-white dark:hover:bg-white"
+                        aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button"
+                        class="w-3 h-3 rounded-full bg-white/50 dark:bg-white/50 hover:bg-white dark:hover:bg-white"
+                        aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button"
+                        class="w-3 h-3 rounded-full bg-white/50 dark:bg-white/50 hover:bg-white dark:hover:bg-white"
+                        aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button"
+                        class="w-3 h-3 rounded-full bg-white/50 dark:bg-white/50 hover:bg-white dark:hover:bg-white"
+                        aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    <button type="button"
+                        class="w-3 h-3 rounded-full bg-white/50 dark:bg-white/50 hover:bg-white dark:hover:bg-white"
+                        aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white ml-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+        <section class="mt-8">
+            <div class="text-center text-2xl font-bold text-red-800">
+                <p>OUR RUNNING OFFERS</p>
+            </div>
+        </section>
+        <!-- cart start-->
+        <section class=" container mx-auto mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-8 p-8">
+                <div
+                    class=" card md:w-[350px]  bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/1.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: মুন্সিগঞ্জ</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 15 February, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 14 February, 2024
+                        </p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            5000</p>
+
+                    </div>
+                </div>
+                <div
+                    class="card md:w-[350px]  bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/2.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: নোয়াখালী</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 15 February, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 14 February, 2024
+                        </p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            6000</p>
+
+                    </div>
+                </div>
+                <div
+                    class="card md:w-[350px]  bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/3.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: শরীয়তপুর</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 16 February, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 15 February, 2024
+                        </p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            5000</p>
+
+                    </div>
+                </div>
+                <div
+                    class="card md:w-[350px]   bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/4.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: সিলেট</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 17 February, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 16 February, 2024
+                        </p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            10000</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class=" container mx-auto mt-8 grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-8  p-8">
+                <div
+                    class="card md:w-[350px]  bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/1.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: সিলেট</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 17 February, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 16 February, 2024
+                        </p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            6000</p>
+
+                    </div>
+                </div>
+                <div
+                    class="card md:w-[350px]  bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/2.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: ব্রাহ্মণবাড়িয়া
+                        </p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 19 February, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 18 February, 2024
+                        </p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            5000</p>
+
+                    </div>
+                </div>
+                <div
+                    class="card md:w-[350px]  bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/3.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: নারায়ণগঞ্জ</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 22 February, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 21 February, 2024
+                        </p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            6000</p>
+
+                    </div>
+                </div>
+                <div
+                    class="card md:w-[350px]   bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/4.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: সিলেট</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 22 February, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 21 February, 2024
+                        </p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            6000</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container mx-auto mt-8 grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 2xl:grid-cols-4 gap-8  p-8">
+                <div
+                    class="card md:w-[350px]  bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img class=" " src="./card images/1.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: সিরাজগঞ্জ</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 28 February, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 27 February, 2024
+                        </p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            5000</p>
+
+                    </div>
+                </div>
+                <div
+                    class="card md:w-[350px]  bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/2.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: শরীয়তপুর</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 7 March, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 6 March, 2024</p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            6000</p>
+
+                    </div>
+                </div>
+                <div
+                    class="card md:w-[350px]  bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/3.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: মাগুরা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 1 April, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 31 March, 2024</p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            10000</p>
+
+                    </div>
+                </div>
+                <div
+                    class="card md:w-[350px]   bg-base-100 shadow-md hover:shadow-xl xl:transition xl:duration-300 xl:transform xl:hover:scale-110">
+                    <figure><img src="./card images/4.webp" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-center justify-center">
+                            OFFERS
+
+                        </h2>
+                        <p class="mt-2"><span class="text-md font-bold text-red-800">DEPARTURE </span>: রাজবাড়ি</p>
+                        <p class=""><span class="text-md font-bold text-red-800">LANDING </span>: ঢাকা</p>
+                        <p class=""><span class="text-md font-bold text-red-800">FLY DATE </span>: 6 April, 2024</p>
+
+                        <p class=""><span class="text-md font-bold text-red-800">OFFER END </span>: 5 April, 2024</p>
+                        <p class="text-xl font-bold "><span class="text-md font-bold text-red-800">OFFER RATE </span>:
+                            5000</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cart end-->
+        <!-- note start-->
+        <section class="container mx-auto mt-12 bg-[var(--color-primary)]">
+            <div class="flex items-center">
+                <hr class="flex-grow  border-gray-300">
+                <span class="px-2 text-white ml-12text-xl">নোট</span>
+                <hr class="flex-grow  border-gray-300">
+            </div>
+            <div class="flex text-center justify-center gap-3  mt-4 cursor-pointer">
+                <ion-icon class="mt-1 text-white" name="arrow-forward-outline"></ion-icon>
+                <p class="text-white">অফারের ভাড়া নির্ধারিত রুটের নির্ধারিত তারিখের জন্য প্রযোজ্য।</p>
+            </div>
+            <div class="flex text-center justify-center gap-3  mt-2 cursor-pointer">
+                <ion-icon class="mt-1 text-white" name="arrow-forward-outline"></ion-icon>
+                <p class="text-white">ভাড়া জনপ্রতি</p>
+            </div>
+            <div class="flex text-center justify-center gap-3  mt-2 cursor-pointer">
+                <ion-icon class="mt-1 text-white" name="arrow-forward-outline"></ion-icon>
+                <p class="text-white">দুই বছরের অধিক বয়সীদের টিকিট প্রযোজ্য</p>
+            </div>
+            <div class="flex text-center justify-center gap-3  mt-2 cursor-pointer">
+                <ion-icon class="mt-1 text-white" name="arrow-forward-outline"></ion-icon>
+                <p class="text-white">শুধুমাত্র আগ্রহীদের যোগাযোগ করতে অনুরোধ করা হলো।</p>
+            </div>
+            <div class="flex items-center mt-16">
+                <hr class="flex-grow  border-gray-300">
+                <span class="px-2 text-white ml-12text-3xl"><i class="fa-solid fa-helicopter"></i></span>
+                <hr class="flex-grow  border-gray-300">
+            </div>
+        </section>
+        <!--note end-->
+        <!--SERVICE START-->
+        <section class="container mx-auto mt-16">
+            <p class="text-center text-red-800 text-2xl font-bold">OUR SERVICE</p>
+            <div class="flex items-center mt-2">
+                <hr class="flex-grow  border-gray-300">
+                <span class="px-2 text-red-800 text-3xl"><i class="fa-solid fa-helicopter"></i></span>
+                <hr class="flex-grow  border-gray-300">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 ">
+                <div class="card  lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="transition duration-300 transform hover:scale-110 p-8"
+                            src="./card images 2/1.webp" /></figure>
+                    <p class="mb-4 px-8 cursor-pointer text-md hover:text-red-800 font-bold"><a href="">SHOOTING
+                            RIDE</a></p>
+                </div>
+                <div class="card  lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="transition duration-300 transform hover:scale-110 p-8"
+                            src="./card images 2/2.webp" /></figure>
+                    <p class=" px-8 cursor-pointer text-md hover:text-red-800 font-bold"><a href="">CITY TO CITY
+                            RIDE</a></p>
+                </div>
+                <div class="card  lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="transition duration-300 transform hover:scale-110 p-8"
+                            src="./card images 2/3.webp" /></figure>
+                    <p class=" px-8 cursor-pointer text-md hover:text-red-800 font-bold"><a href="">PADMASHETU RIDE</a>
+                    </p>
+                </div>
+            
+            
+                <div class="card  lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="transition duration-300 transform hover:scale-110 p-8"
+                            src="./card images 2/4.webp" /></figure>
+                    <p class="mb-4 px-8 cursor-pointer text-md hover:text-red-800 font-bold"><a href="">10 MINUTE
+                            RIDE</a></p>
+                </div>
+                <div class="card  lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="transition duration-300 transform hover:scale-110 p-8"
+                            src="./card images 2/5.webp" /></figure>
+                    <p class=" px-8 cursor-pointer text-md hover:text-red-800 font-bold"><a href="">15 MINUTE VIP
+                            RIDE</a></p>
+                </div>
+                <div class="card lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="transition duration-300 transform hover:scale-110 p-8"
+                            src="./card images 2/6.webp" /></figure>
+                    <p class=" px-8 cursor-pointer text-md hover:text-red-800 font-bold"><a href="">AIR AMBULANCE</a>
+                    </p>
+                </div>
+            
+            
+                <div class="card  lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="transition duration-300 transform hover:scale-110 p-8"
+                            src="./card images 2/7.webp" /></figure>
+                    <p class="mb-4 px-8 cursor-pointer text-md hover:text-red-800 font-bold"><a href="">MARRIAGE
+                            TRIP</a></p>
+                </div>
+                <div class="card  lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="transition duration-300 transform hover:scale-110 p-8"
+                            src="./card images 2/8.webp" /></figure>
+                    <p class=" px-8 cursor-pointer text-md hover:text-red-800 font-bold"><a href="">SHARE TRIP</a></p>
+                </div>
+
+            </div>
+        </section>
+        <!--SERVICE END-->
+        <!--Our cities start-->
+        <section class="container mx-auto mt-16">
+
+            <p class="text-center text-red-800 text-2xl font-bold">TOP CITIES</p>
+            <div class="flex items-center mt-2">
+                <hr class="flex-grow  border-gray-300">
+                <span class="px-2 text-red-800 text-3xl"><i class="fa-solid fa-helicopter"></i></span>
+                <hr class="flex-grow  border-gray-300">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 mt-4 ">
+                <div class="card  lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="transition  duration-300 transform hover:scale-110 p-8"
+                            src="./our cities/1.webp" /></figure>
+                    <p
+                        class="mb-10 text-center cursor-pointer text-white ml-12text-md p-2 font-bold bg-[var(--color-primary)]">
+                        <a href="">ঢাকা</a>
+                    </p>
+                </div>
+                <div class="card lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="b transition duration-300 transform hover:scale-110 p-8"
+                            src="./our cities/2.webp" /></figure>
+                    <p
+                        class=" mt-4 text-center  cursor-pointer text-white ml-12text-md p-2 font-bold bg-[var(--color-primary)]">
+                        <a href="">নারায়ণগঞ্জ</a>
+                    </p>
+                </div>
+                <div class="card lg:w-[450px] border bg-base-100 shadow-lg hover:shadow-2xl ">
+                    <figure><img class="transition duration-300 transform hover:scale-110 p-8"
+                            src="./our cities/3.jpg" /></figure>
+                    <p
+                        class="mt-4 text-center cursor-pointer text-white ml-12p-2 text-md  font-bold bg-[var(--color-primary)]">
+                        <a href="">ব্রাহ্মণবাড়িয়া</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--Our cities end-->
+        <!--What are our client say start-->
+        <section class="container mx-auto mt-12">
+            <p class="text-center text-red-800 text-2xl font-bold">WHAT OUR CLIENTS SAY</p>
+            <div class="flex items-center mt-2">
+                <hr class="flex-grow  border-gray-300">
+                <span class="px-2 text-red-800 text-3xl"><i class="fa-solid fa-helicopter"></i></span>
+                <hr class="flex-grow  border-gray-300">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 mt-12">
+                <div class="flex gap-4  items-center justify-center">
+                    <div class="w-[250px] h-[250px] ">
+                        <img class="" src="./client say image/1.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Probashir Helicopter</p>
+                        <div class="rating mt-1 ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <p class=""> 9 Google reviews</p>
+                        <button class="bg-[var(--color-primary)] text-white  p-2 mt-2 rounded-lg"><a href="">Write a
+                                review</a></button>
+                    </div>
+                </div>
+                <div id="default-carousel" class="relative w-full " data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg w-full  h-[250px] ">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out h-[100%]  mt-8 md:mt-0" data-carousel-item>
+                            <div class="flex gap-8 ">
+                                <div class="bg-[var(--color-primary)] w-[400px] h-[300px] px-2 p-8">
+                                    <div class="flex gap-8">
+                                        <img class="w-16 h-16 rounded-full" src="./client say image/2.png" alt="">
+                                        <div>
+                                            <p class="text-white">Rony Reja</p>
+                                            <p class="text-gray-300">December 4, 2023</p>
+                                        </div>
+                                        <i class="fa-brands fa-google text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="rating mt-1 ml-12">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div>
+                                            <p class="text-white ml-12">'Probasir Helicopter' has made helicopter
+                                                service easy for all classes of people. With very little money, many
+                                                people are able to fulfill their dream of riding in a helicopter. May
+                                                they be well.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[var(--color-primary)] w-[400px] h-[300px] px-12 p-8 hidden xl:block">
+                                    <div class="flex gap-8">
+                                        <img class="w-16 h-16 rounded-full" src="./client say image/3.png" alt="">
+                                        <div>
+                                            <p class="text-white">Md. Ehsanul Haque Faisal</p>
+                                            <p class="text-gray-300">November 22, 2023</p>
+                                        </div>
+                                        <i class="fa-brands fa-google text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="rating mt-1 ">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div>
+                                            <p class="text-white">খুবই ভালো লেগেছে ভ্রমনটা। সার্ভিস অনেক ভালো।</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden relative duration-700 ease-in-out h-[100%]  mt-8 md:mt-0" data-carousel-item>
+                            <div class="flex gap-8 ">
+                                <div class="bg-[var(--color-primary)] w-[400px] h-[300px] px-2 p-8">
+                                    <div class="flex gap-8 ml-4">
+                                        <img class="w-16 h-16 rounded-full" src="./client say image/4.png" alt="">
+                                        <div>
+                                            <p class="text-white">Arafat Rahman</p>
+                                            <p class="text-gray-300">November 19, 2023</p>
+                                        </div>
+                                        <i class="fa-brands fa-google text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="rating mt-1 ml-12">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div>
+                                            <p class="text-white ml-12">Their behaviour is good mashallah. found it very
+                                                joyful and supportive all through my journey. good luck !</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[var(--color-primary)] w-[400px] h-[300px] px-12 p-8 hidden xl:block">
+                                    <div class="flex gap-8">
+                                        <img class="w-16 h-16 rounded-full" src="./client say image/5.png" alt="">
+                                        <div>
+                                            <p class="text-white">Shahinul Islam</p>
+                                            <p class="text-gray-300">November 18, 2023</p>
+                                        </div>
+                                        <i class="fa-brands fa-google text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="rating mt-1 ">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div>
+                                            <p class="text-white ">Best Helicopter Service in Bangladesh at low price.
+                                                Great Service</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!--items 3-->
+                        <div class="hidden duration-700 ease-in-out h-[100%]  mt-8 md:mt-0" data-carousel-item>
+                            <div class="flex gap-8 ">
+                                <div class="bg-[var(--color-primary)] w-[400px] h-[300px] px-2 p-8">
+                                    <div class="flex gap-8">
+                                        <img class="w-16 h-16 rounded-full" src="./client say image/6.png" alt="">
+                                        <div>
+                                            <p class="text-white">Abu Bokkor Siddik</p>
+                                            <p class="text-gray-300">October 28, 2023</p>
+                                        </div>
+                                        <i class="fa-brands fa-google text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="rating mt-1 ml-12">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div>
+                                            <p class="text-white ml-12">Great Service, I love This 🥰🥰</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[var(--color-primary)] w-[400px] h-[300px] px-12 p-8 hidden xl:block">
+                                    <div class="flex gap-8">
+                                        <img class="w-16 h-16 rounded-full" src="./client say image/7.png" alt="">
+                                        <div>
+                                            <p class="text-white">Alamin Prodhan</p>
+                                            <p class="text-gray-300">July 29, 2023</p>
+                                        </div>
+                                        <i class="fa-brands fa-google text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="rating mt-1 ">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div>
+                                            <p class="text-white ">I called but their behaviour is very poor not
+                                                professional.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--items 4-->
+                        <div class="hidden duration-700 ease-in-out h-[100%]  mt-8 md:mt-0" data-carousel-item>
+                            <div class="flex gap-8 ">
+                                <div class="bg-[var(--color-primary)] w-[400px] h-[300px] px-2 p-8">
+                                    <div class="flex gap-8">
+                                        <img class="w-16 h-16 rounded-full" src="./client say image/8.png" alt="">
+                                        <div>
+                                            <p class="text-white">Dhaka Media</p>
+                                            <p class="text-gray-300">July 25, 2023</p>
+                                        </div>
+                                        <i class="fa-brands fa-google text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="rating mt-1 ml-12">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div>
+                                            <p class="text-white ml-12">Grate service. Thank you for the service.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-[var(--color-primary)] w-[400px] h-[300px] px-12 p-8  hidden xl:block">
+                                    <div class="flex gap-8">
+                                        <img class="w-16 h-16 rounded-full" src="./client say image/9.png" alt="">
+                                        <div>
+                                            <p class="text-white">Riazul Shad</p>
+                                            <p class="text-gray-300">December 4, 2023</p>
+                                        </div>
+                                        <i class="fa-brands fa-google text-white"></i>
+                                    </div>
+                                    <div>
+                                        <div class="rating mt-1 ">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <div>
+                                            <p class="text-white ">Really a good company and good service</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Slider controls -->
+
+                </div>
+            </div>
+
+        </section>
+        <!--what are out client say end-->
+        <!--VIDEO REVIEWS start-->
+        <section class="container mx-auto mt-16">
+            <p class="text-center text-red-800 text-2xl font-bold ">VIDEO REVIEWS</p>
+            <div class="flex items-center mt-2">
+                <hr class="flex-grow  border-gray-300">
+                <span class="px-2 text-red-800 text-3xl"><i class="fa-solid fa-helicopter"></i></span>
+                <hr class="flex-grow  border-gray-300">
+            </div>
+            <div class="grid grid-cols-1 xl:grid-cols-2  gap-4 mt-4 px-2 sm:px-8  ml-0 lg:ml-36 xl:ml-0 lg:px-0">
+                <div class=" md:w-[600px] h-[400px]">
+
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/1rtxrCuDRsI?si=vjHSIKNTpa6CHZar"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                </div>
+
+                <div class="md:w-[600px] h-[400px]">
+
+
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/Ypt8meEscZg?si=ItARJOqEnMLHXkSL"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+
+                </div>
+            </div>
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 mt-4 px-2 sm:px-8 ml-0 lg:ml-36 xl:ml-0 lg:px-0">
+                <div class="md:w-[600px] h-[400px]">
+
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/DfwyB1rOtVo?si=30ImFz7P5yxzQzD6"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                </div>
+
+                <div class="md:w-[600px] h-[400px]">
+
+
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/YeA1MC5k3VU?si=3NXDthDFjW_eoEdb"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+
+                </div>
+            </div>
+        </section>
+        <!--VIDEO REVIEWS end-->
+        <!--our partners start-->
+        <section class="container mx-auto mt-16">
+            <p class="text-center text-red-800 text-2xl font-bold ">OUR PARTNERS</p>
+            <div class="flex items-center mt-2">
+                <hr class="flex-grow  border-gray-300">
+                <span class="px-2 text-red-800 text-3xl"><i class="fa-solid fa-helicopter"></i></span>
+                <hr class="flex-grow  border-gray-300">
+            </div>
+            <div class=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 mt-8">
+                <div
+                    class="mt-8 lg:mt-0 w-[150px] h-[150px] rounded-md border-x-4 transition duration-300 transform hover:scale-110">
+                    <img class="w-full h-full" src="./partner images/1.webp" alt="">
+                </div>
+                <div
+                    class="mt-8 lg:mt-0 w-[150px] h-[150px] rounded-md border-x-4 transition duration-300 transform hover:scale-110">
+                    <img class="w-full h-full" src="./partner images/2.png" alt="">
+                </div>
+
+                <div
+                    class="mt-8 lg:mt-0 w-[150px] h-[150px] rounded-md border-x-4 transition duration-300 transform hover:scale-110">
+                    <img class="w-full h-full" src="./partner images/3.webp" alt="">
+                </div>
+                <div
+                    class="mt-8 lg:mt-0 w-[150px] h-[150px] rounded-md border-x-4 transition duration-300 transform hover:scale-110">
+                    <img class="w-full h-full" src="./partner images/4.webp" alt="">
+                </div>
+                <div
+                    class="mt-8 lg:mt-4 xl:mt-0 w-[150px] h-[150px] rounded-md border-x-4 transition duration-300 transform hover:scale-110">
+                    <img class="w-full h-full" src="./partner images/5.webp" alt="">
+                </div>
+                <div
+                    class="mt-8 lg:mt-4 xl:mt-0 w-[150px] h-[150px] rounded-md border-x-4 transition duration-300 transform hover:scale-110">
+                    <img class="w-full h-full" src="./partner images/6.webp" alt="">
+                </div>
+            </div>
+            <hr class="flex-grow  border-gray-300 mt-12">
+        </section>
+
+        <!--our partners end-->
+
+        <!--news and media start-->
+        <section class="container mx-auto mt-16">
+            <p class="text-center text-red-800 text-2xl font-bold ">NEWS & MEDIA</p>
+            <div class="flex items-center mt-2">
+                <hr class="flex-grow  border-gray-300">
+                <span class="px-2 text-red-800 text-3xl"><i class="fa-solid fa-helicopter"></i></span>
+                <hr class="flex-grow  border-gray-300">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-4 mt-8">
+                <div class="card  md:w-72 lg:w-96 bg-base-100 shadow-lg hover:shadow-2xl border-8">
+                    <div class="card-body">
+                        <h2 class="card-title">12 June, 2023</h2>
+                        <a href="https://www.bvnews24.com/organization/news/98405"><p>চলাচল সহজ করবে প্রবাসীর হেলিকপ্টার</p></a>
+                    </div>
+                    <figure class="w-full h-[100px]"><a href="https://www.bvnews24.com/organization/news/98405"><img  class="p-4 w-full h-full" src="./new & media images/1.webp" /></a></figure>
+                </div>
+                <div class="card  md:w-72 lg:w-96 bg-base-100 shadow-lg hover:shadow-2xl border-8">
+                    <div class="card-body">
+                        <h2 class="card-title">12 June, 2023</h2>
+                        <a href="https://www.kholakagojbd.com/capital/116056"><p>চলাচল সহজ করবে প্রবাসীর হেলিকপ্টার</p></a>
+                    </div>
+                    <figure class="w-full h-[100px]"><a href="https://www.kholakagojbd.com/capital/116056"><img  class="p-4 w-full h-full" src="./new & media images/2.webp" /></a></figure>
+                </div>
+                <div class="card  md:w-72 lg:w-96 bg-base-100 shadow-lg hover:shadow-2xl border-8">
+                    <div class="card-body">
+                        <h2 class="card-title">12 June, 2023</h2>
+                        <a href="https://www.ntvbd.com/bangladesh/news-1241985"><p>হেলিকপ্টারে সাড়ে পাঁচ হাজার টাকায় ঘোরা যাবে ঢাকা!</p></a>
+                    </div>
+                    <figure class="w-full h-[100px]"><a href="https://www.ntvbd.com/bangladesh/news-1241985"><img  class="p-4 w-full h-full" src="./new & media images/3.webp" /></a></figure>
+                </div>
+                <div class="card   md:w-72 lg:w-96 bg-base-100 shadow-lg hover:shadow-2xl border-8">
+                    <div class="card-body">
+                        <h2 class="card-title">12 June, 2023</h2>
+                       <a href="https://www.songbadprokash.com/national/it-will-make-it-easier-to-fly-helicopters./56918"> <p>হেলিকপ্টারে স্বল্প খরচে প্রবাসীদের বাড়ি ফেরার সুযোগ</p></a>
+                    </div>
+                    <figure class="w-full h-[100px]"><a href="https://www.songbadprokash.com/national/it-will-make-it-easier-to-fly-helicopters./56918"><img  class="p-4 w-full h-full" src="./new & media images/4.webp" /></a></figure>
+                </div>
+                <div class="card   md:w-72 lg:w-96 bg-base-100 shadow-lg hover:shadow-2xl border-8">
+                    <div class="card-body">
+                        <h2 class="card-title">12 June, 2023</h2>
+                        <a href="https://www.facebook.com/JamunaTelevision/videos/791131515968359/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C&mibextid=Nif5oz"><p>ঢাকার মধ্যে মাত্র ৫ হাজার টাকায় চড়তে পারবেন হেলিকপ্টারে!</p></a>
+                    </div>
+                    <figure class="w-full h-[100px]"><a href="https://www.facebook.com/JamunaTelevision/videos/791131515968359/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C&mibextid=Nif5oz"><img  class="p-4 w-full h-full" src="./new & media images/5.webp" /></a></figure>
+                </div>
+                <div class="card   md:w-72 lg:w-96 bg-base-100 shadow-lg hover:shadow-2xl border-8">
+                    <div class="card-body">
+                        <h2 class="card-title">12 June, 2023</h2>
+                       <a href="https://www.youtube.com/watch?v=wQPaA4b6rjI"> <p>হেলিকপ্টারে স্বল্প খরচে প্রবাসীদের বাড়ি ফেরার সুযোগ</p></a>
+                    </div>
+                    <figure class="w-full h-[100px]"><a href="https://www.youtube.com/watch?v=wQPaA4b6rjI"><img  class="p-4 w-full h-full" src="./new & media images/6.svg" /></a></figure>
+                </div>
+                <div class="card  md:w-72 lg:w-96 bg-base-100 shadow-lg hover:shadow-2xl border-8">
+                    <div class="card-body">
+                        <h2 class="card-title">12 June, 2023</h2>
+                        <a href="https://www.facebook.com/janaojanavideo/videos/2225724957636715/"><p>হেলিকপ্টারে স্বল্প খরচে প্রবাসীদের বাড়ি ফেরার সুযোগ!</p></a>
+                    </div>
+                    <figure class="w-full h-[100px]"><a href="https://www.facebook.com/janaojanavideo/videos/2225724957636715/"><img  class="p-4 w-full h-full" src="./new & media images/7.webp" /></a></figure>
+                </div>
+                <div class="card   md:w-72 lg:w-96 bg-base-100 shadow-lg hover:shadow-2xl border-8">
+                    <div class="card-body">
+                        <h2 class="card-title">12 June, 2023</h2>
+                        <a href="https://www.facebook.com/ChannelSatkahonNews/videos/652881086222051/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C&mibextid=Nif5oz"><p>প্রবাসীদের যাতায়াতের সুবিধার্থে যাত্রা শুরু হল প্রবাসীর হেলিকপ্টার !</p></a>
+                    </div>
+                    <figure class="w-full h-[100px]"><a href="https://www.facebook.com/ChannelSatkahonNews/videos/652881086222051/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C&mibextid=Nif5oz"><img  class="p-4 w-full h-full" src="./new & media images/8.webp" /></a></figure>
+                </div>
+                <div class="card  md:w-72 lg:w-96 bg-base-100 shadow-lg hover:shadow-2xl border-8">
+                    <div class="card-body">
+                        <h2 class="card-title">12 June, 2023</h2>
+                        <a href="https://www.tbsnews.net/bangladesh/helicopter-service-launched-expatriates-648674"><p>Helicopter service launched for expatriates</p></a>
+                    </div>
+                    <figure class="w-full h-[100px]"><a href="https://www.tbsnews.net/bangladesh/helicopter-service-launched-expatriates-648674"><img  class="p-4 w-full h-full" src="./new & media images/9.webp" /></a></figure>
+                </div>
+            </div>
+        </section>
+        <!--news and media end-->
+    </main>
+    <footer class="container mx-auto bg-[var(--color-primary)] mt-12">
+        <div class="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 text-white ml-12mt-10 relative">
+            <div class="mt-4 ml-4">
+                <p class="font-bold text-xl uppercase">Contact us</p>
+                <address>
+                    <div class="flex mt-4 gap-4">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>House #09,Flat:3/B,Road#14 ,sector#01,Uttara, <br>
+                            Dhaka-1230
+                        </p>
+                    </div>
+                    <div class="flex mt-4 mb-4 gap-4">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <p>+088 01920-485470 /+088 01727-456405</p>
+                    </div>
+                    <div class="flex mb-4 gap-4">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <p>abcd.com </p>
+                    </div>
+                </address>
+                <div class="gap-4">
+                    <ion-icon class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon>
+                </div>
+            </div>
+            <div class="mt-4 ml-4">
+                <p class="font-bold text-xl uppercase">Company</p>
+                <div class=" text-lg mt-4">
+                    <div class="">
+                        <p class="mt-2"> <a href="">Home</a></p>
+                        <p class="mt-1"><a href=""><a href="">Details</a> </a></p>
+                        <p class="mt-1"><a href="">Contact us </a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-4 ml-4">
+                <p class="font-bold text-xl uppercase">Discover</p>
+                <div class=" text-lg">
+                    <div>
+                        <p class="mt-4"><a href="">Payment Method</a></p>
+                        <p class="mt-1"> <a href="">Term & condition</a></p>
+                        <p class="mt-1"> <a href="">Privacy Policy</a></p>
+                        <p class="mt-1"> <a href="">Refund & Cancel Policy</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-4 ml-4 relative">
+                <div class="text-white ml-12ml-4  mt-2">
+                    <p class="font-bold text-xl uppercase">Service</p>
+                    <p class="mt-4">Helicopter</p>
+                    <p class="mt-1">Ambulance</p>
+                    <p class="mt-1">Plane</p>
+                    <p class="mt-1">ICU Ambulance</p>
+                </div>
+            </div>
+        </div>
+
+        <iframe class="aspect-video w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.672890318832!2d90.4022900759674!3d23.865746684337203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c518e6e257e9%3A0x83fbb2e6edd0e180!2sProbashi%20Air!5e0!3m2!1sen!2sbd!4v1699591729627!5m2!1sen!2sbd"
+            width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div>
+            <hr>
+        </div>
+        <div class="p-2">
+            <p class="text-white ml-12text-center">Copyright© 2023: All right reserved by Helicopter Service Bangladesh
+            </p>
+        </div>
+    </footer>
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+
+    </script>
+</body>
+
+</html>

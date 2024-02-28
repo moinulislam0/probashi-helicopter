@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript">
+        $(function () {
+            $("#header-content").load("./header.html");
+            $("#footer").load("./footer.html");
+        });
+    </script>
+    <style>
+        .submenu {
+            display: none;
+        }
+
+        :root {
+            --color-primary: #8d328f;
+            --color-primary-light: #d96cdb;
+            --secondary-color: #0a5c83;
+        }
+
+        /* Show the submenu when hovering over the parent element */
+        .group:hover .submenu {
+            display: block;
+        }
+
+        @keyframes carousel {
+            100% {
+                transform: translateX(-250);
+            }
+        }
+
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+        .scroll-text {
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            60% {
+                transform: translateX(30%);
+            }
+        }
+
+        .dropdown_item:hover .dropdown_arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container mx-auto rounded  bg-white h-[76px] sm:mb-[10px]   md:mb-0">
+
+        <div class="flex p-2">
+            <div class="w-3/12">
+                <img class="h-[50px]" src="./logo/1.webp" alt="">
+            </div>
+            <div class="w-6/12 flex justify-center invisible md:visible" style="align-items: center;">
+                <b class="uppercase text-[var(--color-primary)] text-xl font-bold">Fly Helicopter Service Bangladesh</b>
+            </div>
+            <div class="w-3/12 flex justify-end">
+
+
+                <div class="flex mr-2 pr-2" style="border-right: 1px solid;">
+                    <!-- <div class="flex justify-center mb-[65px] md:mb-0" style="align-items: center; ">
+                  <ion-icon class=" lg:text-2xl md:text-sm " name="mail-outline"></ion-icon>
+               </div> -->
+
+                    <div>
+                        <p class="text-md font-semibold mb-[-6px] text-right text-[var(--color-primary)]">EMAIL</p>
+                        <p class="text-right">abcd.com</p>
+                    </div>
+                </div>
+                <div class="flex ">
+                    <!-- <div class="flex justify-center mb-[65px] md:mb-0" style="align-items: center;">
+                  <ion-icon class=" lg:text-2xl md:text-sm " name="call-outline"></ion-icon>
+               </div> -->
+
+                    <div>
+                        <p class="text-md font-semibold mb-[-6px] text-right text-[var(--color-primary)]">MOBILE</p>
+                        <p class="text-right">01721584542</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="container mx-auto rounded sticky top-0 z-40 lg:z-50  bg-[var(--color-primary)] ">
+            <div
+                class="container mx-auto    flex items-center bg-[var(--color-primary)] rounded-md  justify-between text-black xl:text-white">
+                <span class="text-3xl cursor-pointer text-white ml-12 xl:hidden">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+                </span>
+                <ul class="uppercase xl:flex xl:items-center z-[-1] xl:z-auto xl:static absolute bg-white xl:bg-[var(--color-primary)] w-[450px] border-1 letf-0 xl:w-auto xl:py-0 my-4 xl:pl-0 pl-7 xl:opacity-100 opacity-0 top-[-300px] trasition-all easein doration-500 m-[5px]"
+                    style="margin: 0px;padding: 5px;">
+
+                    <li class="mr-2 md:my-0 relative group ">
+                        <a class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2"
+                            href="Index.html">
+                            <div class="flex gap-1">
+                                <p class="whitespace-nowrap uppercase">Home</p>
+                            </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                        </a>
+                        <!-- <div class="visible sm:invisible w-2/3">
+                     <hr>
+                  </div> -->
+                        <div style="z-index: 99;"
+                            class="lg:absolute bg-white  text-slate-500 text-lg  w-56 drop-shadow-md ml-8 lg:ml-auto">
+                            <ul class="space-y-2 lg:w-56 group-hover:block submenu p-2 ">
+                                <li><a class="text-[15px]" href="" target="_blank">service</a>
+                                    <hr>
+                                </li>
+                                <li><a class="text-[15px]" href="" target="_blank">offer</a>
+                                    <hr>
+                                </li>
+                                <li><a class="text-[15px]" href="" target="_blank">top city</a>
+                                    <hr>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mr-2 md:my-0 font-bold "><a
+                            class="text-md  decoration-500 xl:hover:bg-[var(--color-primary)]  p-2 " href="">Partner</a>
+
+
+                    </li>
+
+
+
+                    <li class="mr-2 md:my-0 relative group ">
+                        <a class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2"
+                            href=" ">
+                            <div class="flex gap-1">
+                                <p class="whitespace-nowrap uppercase">News & media</p>
+                            </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                        </a>
+                        <!-- <div class="visible sm:invisible w-2/3">
+                 <hr>
+              </div> -->
+                        <div style="z-index: 99;"
+                            class="lg:absolute bg-white  text-slate-500 text-lg  w-56 drop-shadow-md ml-8 lg:ml-auto">
+                            <ul class="space-y-2 lg:w-56 group-hover:block submenu p-2 ">
+                                <li><a class="text-[15px]" href="" target="_blank">google review</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mr-2 md:my-0"><a
+                            class="text-md decoration-500 font-bold xl:hover:bg-[var(--color-primary)]  p-2"
+                            href="about.html">About us</a></li>
+
+
+                    <li class="mr-2 md:my-0 relative group"><a
+                            class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2"
+                            href="contact.html">
+                            <div class="flex gap-1">
+                                <p class="whitespace-nowrap ">Contact
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="mr-2 md:my-0 relative group"><a
+                            class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2"
+                            href="">
+                            <div class="flex gap-1">
+                                <button class="p-2 rounded-lg text-center bg-black uppercase text-white">
+                                    <p>Offer</p>
+                                </button>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+                </nav>
+            </div>
+            <marquee class="bg-[#fff] text-[var(--color-primary)] text-sm ">Fly Helicopter Service Bangladesh. Do you
+                want
+                to be a agent of probashi air. Please communicate with us. Mobile: 01637373737, Email: abcd.com
+            </marquee>
+        </section>
+        <section class="container mx-auto">
+            <p class="text-center text-red-800 text-3xl font-bold uppercase  ">About us</p>
+            <div class="flex items-center mt-2">
+                <hr class="flex-grow  border-gray-300">
+                <span class="px-2 text-red-800 text-3xl"><i class="fa-solid fa-helicopter"></i></span>
+                <hr class="flex-grow  border-gray-300">
+            </div>
+            <div class="grid grid-cols-1  lg:grid-cols-2 2xl:grid-cols-3 mt-12 gap-8">
+                <div>
+                    <img src="./logo/1.webp" alt="">
+                    <p class="text-justify p-4">Probashir Helicopter offers a one-stop Helicopter service in
+                        Bangladesh from the airport to your
+                        destination. It is an exclusive airport transport solution for a person who is coming to
+                        Bangladesh from abroad.</p>
+
+                </div>
+                <div>
+                    <div class=" lg:w-[480px] xl:w-[600px] h-[200px]  lg:h-[400px]">
+
+
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/K4vgBmmp6TY?si=uB_RZtddglcFqtz2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center text-red-800 text-xl font-bold uppercase  ">contact us</p>
+                    <div class="ml-0 md:ml-16 2xl:ml-24 p-4 "   >
+                        <span class="flex gap-3 mt-8  text-lg">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <p>+88 01849-920409</p>
+                        </span>
+                        <span class="flex gap-3 mt-2  ">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <p class="text-lg">info@probashirhelicopter.com</p>
+                        </span>
+                        <span class="flex gap-3 mt-2  text-lg">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <p>389/B, MG Tower, (7th Floor), <br> West Rampura, Dhaka-1219</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="flex items-center">
+                <hr class="flex-grow  border-gray-300">
+                <span class="px-2 text-red-800 text-2xl">Sister Concern of <span class="text-red-500">PROBASHI
+                        GROUP</span></span>
+                <hr class="flex-grow  border-gray-300">
+            </div>
+        </section>
+        <section class="container mx-auto mt-12">
+            <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-5">
+                <div class="text-3xl text-red-800 mt-12 flex gap-5">
+                    <a href="https://www.youtube.com/@probashirhelicopter"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/probashirhelicopter"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B8801849920409&text&type=phone_number&app_absent=0"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class=" md:w-[200px] mt-8">
+                    <a href="https://probashtime.net/"><img src="./probashi group image/1.png" alt=""></a>
+                </div>
+                <div class="w-[150px] h-[100px]">
+                    <img class="w-full h-full" src="./logo/1.webp" alt="">
+                </div>
+                <div class="w-[150px] h-[100px]">
+                    <a href="https://probashircity.com/"><img class="w-full h-full" src="./probashi group image/2.webp"
+                            alt=""></a>
+                </div>
+                <div class="w-[150px] h-[100px]">
+                    <a href="https://probashirtaxi.com/web/"><img class="w-full h-full"
+                            src="./probashi group image/3.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container mx-auto bg-[var(--color-primary)] mt-12">
+        <div class="container mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 text-white ml-12mt-10 relative">
+            <div class="mt-4 ml-4">
+                <p class="font-bold text-xl uppercase">Contact us</p>
+                <address>
+                    <div class="flex mt-4 gap-4">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>House #09,Flat:3/B,Road#14 ,sector#01,Uttara, <br>
+                            Dhaka-1230
+                        </p>
+                    </div>
+                    <div class="flex mt-4 mb-4 gap-4">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <p>+088 01920-485470 /+088 01727-456405</p>
+                    </div>
+                    <div class="flex mb-4 gap-4">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <p>abcd.com </p>
+                    </div>
+                </address>
+                <div class="gap-4">
+                    <ion-icon class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon>
+                </div>
+            </div>
+            <div class="mt-4 ml-4">
+                <p class="font-bold text-xl uppercase">Company</p>
+                <div class=" text-lg mt-4">
+                    <div class="">
+                        <p class="mt-2"> <a href="">Home</a></p>
+                        <p class="mt-1"><a href=""><a href="">Details</a> </a></p>
+                        <p class="mt-1"><a href="">Contact us </a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-4 ml-4">
+                <p class="font-bold text-xl uppercase">Discover</p>
+                <div class=" text-lg">
+                    <div>
+                        <p class="mt-4"><a href="">Payment Method</a></p>
+                        <p class="mt-1"> <a href="">Term & condition</a></p>
+                        <p class="mt-1"> <a href="">Privacy Policy</a></p>
+                        <p class="mt-1"> <a href="">Refund & Cancel Policy</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-4 ml-4 relative">
+                <div class="text-white ml-12ml-4  mt-2">
+                    <p class="font-bold text-xl uppercase">Service</p>
+                    <p class="mt-4">Helicopter</p>
+                    <p class="mt-1">Ambulance</p>
+                    <p class="mt-1">Plane</p>
+                    <p class="mt-1">ICU Ambulance</p>
+                </div>
+            </div>
+        </div>
+
+        <iframe class="aspect-video w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.672890318832!2d90.4022900759674!3d23.865746684337203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c518e6e257e9%3A0x83fbb2e6edd0e180!2sProbashi%20Air!5e0!3m2!1sen!2sbd!4v1699591729627!5m2!1sen!2sbd"
+            width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div>
+            <hr>
+        </div>
+        <div class="p-2">
+            <p class="text-white ml-12text-center">Copyright© 2023: All right reserved by Helicopter Service Bangladesh
+            </p>
+        </div>
+    </footer>
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+
+    </script>
+</body>
+
+</html>
